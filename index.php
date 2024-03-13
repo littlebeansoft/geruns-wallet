@@ -10,13 +10,13 @@ include('header.php');
 		}*/
 ?>
 <div class="main-container container-plus bgc-white">
-    <?php
+	<?php
 	include('menu_left.php');
 	?>
 
-    <div role="main" class="main-content">
+	<div role="main" class="main-content">
 
-        <?php
+		<?php
 		print_r($part);
 		print_r($view);
 		if (array_key_exists($part[1], $view)) {
@@ -25,7 +25,7 @@ include('header.php');
 		include('footer_page.php');
 		//include('web_control.php');
 		?>
-    </div>
+	</div>
 </div>
 
 <!-- include common vendor scripts used in demo pages -->
@@ -55,13 +55,13 @@ include('header.php');
 
 
 <script>
-var folder = "<?php echo $view[$part[1]]['appFolder']; ?>";
-//ฟังก์ชั่นตั้งค่าเพื่อให้คำสั่ง $.post รับค่าจาก new FormData(document.getel) โดยเอา
-$.ajaxSetup({
-    cache: false,
-    contentType: false,
-    processData: false
-});
+	var folder = "<?php echo $view[$part[1]]['appFolder']; ?>";
+	//ฟังก์ชั่นตั้งค่าเพื่อให้คำสั่ง $.post รับค่าจาก new FormData(document.getel) โดยเอา
+	$.ajaxSetup({
+		cache: false,
+		contentType: false,
+		processData: false
+	});
 </script>
 <script src="<?php echo $view[$part[1]]['appFolder']; ?>function.js"></script>
 </body>
