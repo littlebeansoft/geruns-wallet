@@ -17,7 +17,7 @@ $view = [
 ];
 //config 
 $web = [
-	"domain" => "http://localhost/gerun-wallet/",
+	"domain" => "https://geruns-wallet.azurewebsites.net",
 ];
 
 $menu = [
