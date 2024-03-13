@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/580d5607-cfc4-4439-8355-4ed401ee640c/resourceGroups/Geruns/providers/Microsoft.Web/sites/geruns-wallet",
+    "appService.deploySubpath": "jquery-ui"
+}
