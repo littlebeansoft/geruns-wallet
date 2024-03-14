@@ -1,6 +1,4 @@
-<?php $part = isset($_SERVER['PATH_INFO']) ? explode('/', preg_replace('~^/?(.*?)/?
-	$~', '$1', $_SERVER['PATH_INFO'])) : array();
-$mod_co = count($part);
+<?php
 $webFolder = 'app_modules/';
 //config route 
 $view = [

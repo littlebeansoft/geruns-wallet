@@ -2,6 +2,8 @@
 ini_set('session.gc_maxlifetime', 86400);
 session_set_cookie_params(86400);
 include('main.php');
+$part = explode('/', $_SERVER['REQUEST_URI']);
+
 include('header.php');
 //include('menu_horizontal.php');
 /*if(isset($_SESSION['username'])){
@@ -15,10 +17,9 @@ include('header.php');
 	?>
 
 	<div role="main" class="main-content">
-
 		<?php
-		print_r($part);
-		print_r($view);
+		/*echo $_SERVER['REQUEST_URI'];
+		print_r($part);*/
 		if (array_key_exists($part[1], $view)) {
 			include($view[$part[1]]['appFile']);
 		}

@@ -2,73 +2,77 @@
 <html lang="en" style="--scrollbar-width:17px; --moz-scrollbar-thin:17px; font-size: 0.85rem;">
 
 <head>
-	<meta charset="utf-8">
-	<base href="<?php echo $web['domain']; ?>">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-	<title><?php echo $view[$part[1]]['title'];  ?></title>
+    <meta charset="utf-8">
+    <base href="<?php echo $web['domain']; ?>">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title><?php echo $view[$part[1]]['title'];  ?></title>
 
 
-	<!-- include common vendor stylesheets & fontawesome -->
-	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- include common vendor stylesheets & fontawesome -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
-	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/regular.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
 
-	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-duallistbox/dist/bootstrap-duallistbox.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/select2/dist/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-duallistbox/dist/bootstrap-duallistbox.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/select2/dist/css/select2.css">
 
 
 
-	<!-- include vendor stylesheets used in "Dashboard" page. see "/views//pages/partials/dashboard/@vendor-stylesheets.hbs" -->
-	<link rel="stylesheet" type="text/css" href="node_modules/fullcalendar/main.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/basictable/dist/css/basictable.css">
+    <!-- include vendor stylesheets used in "Dashboard" page. see "/views//pages/partials/dashboard/@vendor-stylesheets.hbs" -->
+    <link rel="stylesheet" type="text/css" href="node_modules/fullcalendar/main.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/basictable/dist/css/basictable.css">
 
-	<link rel="stylesheet" type="text/css" href="node_modules/summernote/dist/summernote-lite.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/summernote/dist/summernote-lite.css">
 
-	<!-- include fonts -->
-	<link rel="stylesheet" type="text/css" href="dist/css/ace-font.css">
+    <!-- include fonts -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-font.css">
 
-	<!-- ace.css -->
-	<link rel="stylesheet" type="text/css" href="dist/css/ace.css">
+    <!-- ace.css -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace.css">
 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Niramit:300,400,500,700&display=swap" />
-	<!-- favicon -->
-	<link rel="icon" type="image/png" href="assets/favicon.png" />
-	<!-- "Dashboard" page styles, specific to this page for demo only -->
-	<!-- "Horizontal Menu" page styles, specific to this page for demo only -->
-	<link rel="stylesheet" type="text/css" href="./views/pages/horizontal/@page-style.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/ace-themes.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Niramit:300,400,500,700&display=swap" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <!-- "Dashboard" page styles, specific to this page for demo only -->
+    <!-- "Horizontal Menu" page styles, specific to this page for demo only -->
+    <link rel="stylesheet" type="text/css" href="./views/pages/horizontal/@page-style.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-themes.css">
 
 </head>
 
 <body>
-	<div class="body-container">
-		<nav class="navbar navbar-sm navbar-fixed-xl navbar-expand-lg navbar-blue">
-			<div class="navbar-inner">
+    <div class="body-container">
+        <nav class="navbar navbar-sm navbar-fixed-xl navbar-expand-lg navbar-blue">
+            <div class="navbar-inner">
 
-				<div class="navbar-intro justify-content-xl-between">
+                <div class="navbar-intro justify-content-xl-between">
 
-					<button type="button" class="btn btn-burger burger-arrowed static collapsed ml-2 d-flex d-xl-none" data-toggle-mobile="sidebar" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle sidebar">
-						<span class="bars"></span>
-					</button><!-- mobile sidebar toggler button -->
+                    <button type="button" class="btn btn-burger burger-arrowed static collapsed ml-2 d-flex d-xl-none"
+                        data-toggle-mobile="sidebar" data-target="#sidebar" aria-controls="sidebar"
+                        aria-expanded="false" aria-label="Toggle sidebar">
+                        <span class="bars"></span>
+                    </button><!-- mobile sidebar toggler button -->
 
-					<a class="navbar-brand text-white" href="#">
-						<i class="fa fa-desktop"></i>
-						<span>Northnfe</span>
+                    <a class="navbar-brand text-white" href="#">
+                        <i class="fa fa-desktop"></i>
+                        <span>Northnfe</span>
 
-					</a><!-- /.navbar-brand -->
+                    </a><!-- /.navbar-brand -->
 
-					<button type="button" class="btn btn-burger mr-2 d-none d-xl-flex" data-toggle="sidebar" data-target="#sidebar" aria-controls="sidebar" aria-expanded="true" aria-label="Toggle sidebar">
-						<span class="bars"></span>
-					</button><!-- sidebar toggler button -->
+                    <button type="button" class="btn btn-burger mr-2 d-none d-xl-flex" data-toggle="sidebar"
+                        data-target="#sidebar" aria-controls="sidebar" aria-expanded="true" aria-label="Toggle sidebar">
+                        <span class="bars"></span>
+                    </button><!-- sidebar toggler button -->
 
-				</div><!-- /.navbar-intro -->
+                </div><!-- /.navbar-intro -->
 
 
-				<div class="navbar-content">
-					<?php /*
+                <div class="navbar-content">
+                    <?php /*
 							
 							<button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navbar search">
 							<i class="fa fa-search text-white text-90 py-1"></i>
@@ -91,10 +95,10 @@
 							</button>
 						*/ ?>
 
-					<div class="navbar-menu collapse navbar-collapse navbar-backdrop" id="navbarMenu">
+                    <div class="navbar-menu collapse navbar-collapse navbar-backdrop" id="navbarMenu">
 
-						<div class="navbar-nav">
-							<?php /*
+                        <div class="navbar-nav">
+                            <?php /*
 									
 									<ul class="nav">
 									
@@ -149,10 +153,10 @@
 									</ul><!-- /.navbar-nav menu -->
 								*/ ?>
 
-						</div><!-- /.navbar-nav -->
+                        </div><!-- /.navbar-nav -->
 
-					</div><!-- /#navbarMenu -->
+                    </div><!-- /#navbarMenu -->
 
 
-				</div><!-- /.navbar-inner -->
-		</nav>
+                </div><!-- /.navbar-inner -->
+        </nav>
